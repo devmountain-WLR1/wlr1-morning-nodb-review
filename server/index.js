@@ -4,7 +4,8 @@ const postCtrl = require('./postController');
 
 app.use(express.json());
 
-app.get('/getmyposts', postCtrl.getPosts)
+app.get('/api/posts', postCtrl.getPosts)
+app.post('/api/posts', postCtrl.addPost)
 
 const port = 4000;
 
